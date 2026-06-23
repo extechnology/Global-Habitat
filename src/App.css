@@ -1,0 +1,181 @@
+@import "tailwindcss";
+@source "../src";
+
+/* =========================================================
+   Global Habitat — Premium Luxury Real Estate Design System
+   Calm, editorial, architectural. Subtle gold. No gradients.
+   ========================================================= */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-ring: var(--ring);
+  --color-gold: var(--gold);
+  --color-ink: var(--ink);
+
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-alt: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-xl: 22px;
+  --radius-2xl: 32px;
+
+  --shadow-soft: 0 1px 2px rgba(14,27,31,0.04), 0 10px 30px -12px rgba(14,27,31,0.08);
+  --shadow-elevate: 0 4px 12px rgba(14,27,31,0.06), 0 30px 60px -20px rgba(14,27,31,0.15);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --ink: #0e1b1f;
+  --primary: #0e1b1f;
+  --primary-foreground: #f8f8f6;
+  --secondary: #f8f8f6;
+  --secondary-foreground: #0e1b1f;
+  --accent: #f8f8f6;
+  --accent-foreground: #0e1b1f;
+  --muted: #f4f3ef;
+  --muted-foreground: #777777;
+  --border: rgba(14, 27, 31, 0.08);
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --ring: #c8a96a;
+  --gold: #c8a96a;
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.02em; }
+  ::selection { background: var(--gold); color: var(--ink); }
+}
+
+/* ---------- Utilities ---------- */
+
+@utility container-luxe {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 1400px;
+  @media (min-width: 768px) { padding-inline: 2.5rem; }
+  @media (min-width: 1280px) { padding-inline: 4rem; }
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@utility link-underline {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -2px;
+    height: 1px; width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 500ms cubic-bezier(.65,0,.35,1);
+  }
+  &:hover::after { transform: scaleX(1); transform-origin: left; }
+}
+
+@utility btn-luxe {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.6rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: #f8f8f6;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  transition: all 500ms cubic-bezier(.65,0,.35,1);
+  cursor: pointer;
+  &:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); transform: translateY(-1px); }
+}
+
+@utility btn-ghost {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.6rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  transition: all 500ms cubic-bezier(.65,0,.35,1);
+  cursor: pointer;
+  &:hover { background: currentColor; color: var(--ink); }
+}
+
+@utility glass {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: saturate(140%) blur(18px);
+  -webkit-backdrop-filter: saturate(140%) blur(18px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+@utility hairline {
+  height: 1px; width: 100%;
+  background: var(--border);
+}
+
+@utility text-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.02;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@utility animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes float-y {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+@utility animate-float {
+  animation: float-y 2.4s ease-in-out infinite;
+}
