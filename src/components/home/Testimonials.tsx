@@ -114,7 +114,7 @@ function Testimonials() {
           >
             {testimonials.map((item) => (
               <SwiperSlide key={item.name}>
-                <div className="group h-full rounded-[32px] border border-black/5 bg-white p-10 shadow-[0_15px_60px_rgba(0,0,0,.06)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_80px_rgba(0,0,0,.12)]">
+                <div className="group h-full rounded-md border border-black/5 bg-white p-10 shadow-[0_15px_60px_rgba(0,0,0,.06)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_80px_rgba(0,0,0,.12)]">
                   <div className="flex items-center justify-between">
                     <div className="flex gap-1">
                       {Array.from({ length: 5 }).map((_, i) => (

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/shared/Navbar";
 import { Footer } from "./components/shared/Footer";
 import { FloatingActions } from "./components/shared/FloatingActions";
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 const Homepage = lazy(() => import("./pages/HomePage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Homepage />} />

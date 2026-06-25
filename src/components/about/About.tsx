@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Counter } from "../shared/Counter";
 import { Reveal,staggerItem,Stagger } from "../shared/Reveal";
-import aboutImg from "../../assets/about.jpeg";
 
 function About() {
   const stats = [
@@ -14,14 +13,14 @@ function About() {
   return (
     <section id="about" className="relative bg-white py-28 md:py-40">
       <div className="container-luxe grid lg:grid-cols-12 gap-14 lg:gap-20 items-center">
-        <Reveal direction="mask" className="lg:col-span-6 relative">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+        <div className="lg:col-span-6 relative">
+          <div className="relative aspect-4/5 overflow-hidden rounded-sm">
             <motion.img
               initial={{ scale: 1.15 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: .8, ease: [0.65, 0, 0.35, 1] }}
-              src={aboutImg}
+              src="/about.jpeg"
               alt="Modern luxury villa exterior with infinity pool"
               loading="lazy"
               className="absolute inset-0 h-full w-full object-cover"
@@ -33,7 +32,7 @@ function About() {
               A decade of building quietly remarkable homes.
             </p>
           </div>
-        </Reveal>
+        </div>
 
         <div className="lg:col-span-6">
           <Reveal>

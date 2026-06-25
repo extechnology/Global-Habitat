@@ -44,16 +44,9 @@ export function Navbar() {
       }`}
     >
       <div className="container-luxe flex h-20 items-center justify-between">
-        <a href="#home" className="flex items-center gap-2.5 group">
-          <span className="h-2 w-2 rounded-full bg-[var(--gold)]" />
-          <span
-            className={`text-display text-lg leading-none transition-colors ${
-              scrolled ? "text-[var(--ink)]" : "text-white"
-            }`}
-          >
-            Global <span className="italic font-normal">Habitat</span>
-          </span>
-        </a>
+        <Link to="/" className="flex items-center gap-2.5 group">
+          <img src="/global-logo.png" className="w-20" alt="global-logo" />
+        </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
           {NAV.map((n) => (
@@ -72,9 +65,9 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href="#contact" className="hidden md:inline-flex btn-luxe">
+          <Link to="/contact" className="hidden md:inline-flex btn-luxe">
             Book Site Visit
-          </a>
+          </Link>
           <button
             aria-label="Open menu"
             onClick={() => setOpen(true)}
