@@ -21,7 +21,7 @@ const LeftContent = () => {
       </h2>
 
       {/* Divider */}
-      <div className="my-5 h-px w-20 bg-neutral-300" />
+      <div className="my-3 h-px w-20 bg-neutral-300" />
 
       {/* Description */}
       <p className="text-xs md:text-[15px] leading-6 text-neutral-600 text-justify sm:text-[16px]">
@@ -30,14 +30,14 @@ const LeftContent = () => {
         extraordinary living experience.
       </p>
 
-      <p className="mt-3 text-xs md:text-[15px] leading-6 text-neutral-600 text-justify sm:text-[16px]">
+      <p className="mt-2 text-xs md:text-[15px] leading-6 text-neutral-600 text-justify sm:text-[16px]">
         Every residence is designed with exceptional attention to detail,
         premium finishes and sustainable living principles that enrich everyday
         life.
       </p>
 
       {/* CTA */}
-      <button className="group mt-6 flex w-fit items-center gap-3 rounded-full border border-neutral-900 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:bg-neutral-900 hover:text-white sm:px-7 sm:py-4">
+      <button className="group mt-4 flex w-fit items-center gap-3 rounded-full border border-neutral-900 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:bg-neutral-900 hover:text-white sm:px-7 sm:py-4">
         Explore Homes
         <ArrowRight
           size={18}

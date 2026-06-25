@@ -15,7 +15,7 @@ function Updates() {
   return (
     <section
       id="updates"
-      className="relative bg-[var(--accent)] py-10 md:py-36"
+      className="relative bg-[var(--accent)] py-8 md:py-36"
     >
       <div className="container-luxe px-4 grid lg:grid-cols-12 gap-8 items-center">
         <div className="lg:col-span-5">

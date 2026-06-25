@@ -52,7 +52,7 @@ const COLS = [
 export function Footer() {
   return (
     <footer className="bg-[var(--ink)] text-white">
-      <div className="container-luxe pt-24 pb-12">
+      <div className="container-luxe pt-10 md:pt-24 pb-12">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <p className="eyebrow text-[var(--gold)]">Global Habitat</p>

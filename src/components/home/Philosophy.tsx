@@ -41,9 +41,9 @@ function Philosophy() {
   ];
 
   return (
-    <section className="relative bg-[var(--accent)] py-10 md:py-32">
+    <section className="relative bg-[var(--accent)] py-5 md:py-32">
       <div className="container-luxe px-4">
-        <div className="grid md:grid-cols-12 gap-5 items-end mb-10">
+        <div className="grid md:grid-cols-12 gap-5 items-end mb-5">
           <Reveal className="md:col-span-7">
             <p className="eyebrow">Our Philosophy</p>
             <h2 className="text-display mt-4 text-[clamp(2rem,4.2vw,3.4rem)] text-[var(--ink)]">
