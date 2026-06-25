@@ -22,9 +22,6 @@ const HomePage = () => {
       <VideoSection />
       <Philosophy />
       <ImagesAndContent />
-      {/* <Journey /> */}
-      {/* <Amenities />
-      <Gallery /> */}
       <Quality />
       <Updates />
       <Testimonials />

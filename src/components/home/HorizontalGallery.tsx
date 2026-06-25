@@ -37,79 +37,93 @@ const HorizontalGallery = () => {
   return (
     <div
       className="
-      flex
-      gap-8
-      overflow-x-auto
-      scroll-smooth
-      snap-x
-      snap-mandatory
-      pb-6
-      pr-10
-      scrollbar-hide
+        flex
+        gap-4
+        overflow-x-auto
+        scroll-smooth
+        snap-x
+        snap-mandatory
+        pb-4
+        scrollbar-hide
+        sm:gap-6
+        sm:pb-6
+        lg:pr-10
       "
     >
       {gallery.map((item) => (
         <div
           key={item.title}
           className="
-          group
-          relative
-          h-[600px]
-          min-w-[400px]
-          overflow-hidden
-          rounded-md
-          snap-start
-          cursor-pointer
-          transition-all
-          duration-700
-          hover:min-w-[560px]
+            group
+            relative
+            h-[320px]
+            min-w-[260px]
+            shrink-0
+            cursor-pointer
+            overflow-hidden
+            rounded-md
+            snap-start
+            transition-all
+            duration-700
+            sm:h-[420px]
+            sm:min-w-[320px]
+            md:h-[500px]
+            md:min-w-[360px]
+            lg:h-[600px]
+            lg:min-w-[400px]
+            lg:hover:min-w-[560px]
           "
         >
           {/* Image */}
-
           <img
             src={item.image}
             alt={item.title}
             className="
-            h-full
-            w-full
-            object-cover
-            transition-transform
-            duration-700
-            group-hover:scale-110
+              h-full
+              w-full
+              object-cover
+              transition-transform
+              duration-700
+              group-hover:scale-110
             "
           />
 
           {/* Overlay */}
-
           <div
             className="
-            absolute
-            inset-0
-            bg-linear-to-t
-            from-black/80
-            via-black/20
-            to-transparent
+              absolute
+              inset-0
+              bg-gradient-to-t
+              from-black/80
+              via-black/20
+              to-transparent
             "
           />
 
           {/* Text */}
-
           <div
             className="
-            absolute
-            bottom-10
-            left-10
-            right-10
-            text-white
+              absolute
+              bottom-6
+              left-6
+              right-6
+              text-white
+              sm:bottom-8
+              sm:left-8
+              sm:right-8
+              lg:bottom-10
+              lg:left-10
+              lg:right-10
             "
           >
             <h3
               className="
-              whitespace-pre-line
-              text-4xl
-              font-light
-              leading-tight
+                whitespace-pre-line
+                text-2xl
+                font-light
+                leading-tight
+                sm:text-3xl
+                lg:text-4xl
               "
             >
               {item.title}
@@ -117,10 +131,12 @@ const HorizontalGallery = () => {
 
             <p
               className="
-              mt-5
-              max-w-xs
-              text-lg
-              text-white/75
+                mt-3
+                max-w-xs
+                text-base
+                text-white/75
+                sm:mt-5
+                sm:text-lg
               "
             >
               {item.subtitle}
@@ -128,16 +144,17 @@ const HorizontalGallery = () => {
 
             <div
               className="
-              mt-8
-              flex
-              items-center
-              gap-3
-              translate-y-8
-              opacity-0
-              transition-all
-              duration-500
-              group-hover:translate-y-0
-              group-hover:opacity-100
+                mt-5
+                flex
+                items-center
+                gap-3
+                translate-y-8
+                opacity-0
+                transition-all
+                duration-500
+                group-hover:translate-y-0
+                group-hover:opacity-100
+                sm:mt-8
               "
             >
               <span className="text-sm uppercase tracking-[0.25em]">

@@ -4,17 +4,20 @@ import HorizontalGallery from "./HorizontalGallery";
 const ImagesAndContent = () => {
   return (
     <div>
-      <section className="bg-[#f8f7f4] py-24">
-        <div className="mx-auto flex max-w-7xl gap-16 px-6">
-          <LeftContent />
+      <section className="bg-[#f8f7f4] py-12 md:py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* On mobile/tablet: stack vertically. On desktop: side-by-side. */}
+          <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
+            <LeftContent />
 
-          <div className="flex-1 overflow-hidden">
-            <HorizontalGallery />
+            <div className="w-full min-w-0 flex-1 overflow-hidden">
+              <HorizontalGallery />
+            </div>
           </div>
         </div>
       </section>
     </div>
   );
-}
+};
 
-export default ImagesAndContent
+export default ImagesAndContent;

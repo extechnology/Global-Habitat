@@ -14,7 +14,7 @@ function About() {
     <section id="about" className="relative bg-white py-28 md:py-40">
       <div className="container-luxe grid lg:grid-cols-12 gap-14 lg:gap-20 items-center">
         <div className="lg:col-span-6 relative">
-          <div className="relative aspect-square overflow-hidden rounded-sm">
+          <div className="relative aspect-square overflow-hidden">
             <motion.img
               initial={{ scale: 1.15 }}
               whileInView={{ scale: 1 }}
