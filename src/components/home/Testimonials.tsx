@@ -43,7 +43,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-[var(--ink)] py-1 md:py-36">
+    <section className="relative overflow-hidden bg-[var(--ink)] py-8 md:py-36">
       <div className="absolute inset-0 opacity-25">
         <img
           src={constructionImg}

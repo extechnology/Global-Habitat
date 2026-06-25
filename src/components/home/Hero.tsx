@@ -41,12 +41,12 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="eyebrow"
+            className="eyebrow hidden md:block"
           >
             Global Habitat Pvt. Ltd.
           </motion.p>
 
-          <h1 className="text-display mt-6 text-[clamp(1rem,5vw,5rem)] text-white">
+          <h1 className="text-display hidden md:block mt-6 text-[clamp(1rem,5vw,5rem)] text-white">
             {headline.map((line, i) => (
               <span key={i} className="block overflow-hidden">
                 <motion.span
@@ -83,12 +83,15 @@ function Hero() {
           >
             <Link
               to="/projects"
-              className="btn-luxe bg-[var(--gold)] border-[var(--gold)] text-[var(--ink)] hover:bg-white hover:border-white"
+              className="btn-luxe text-xs md:text-sm bg-[var(--gold)] border-[var(--gold)] text-[var(--ink)] hover:bg-white hover:border-white"
             >
               Explore Projects
               <ArrowUpRight className="h-4 w-4" />
             </Link>
-            <Link to="/contact" className="btn-ghost text-white">
+            <Link
+              to="/contact"
+              className="btn-ghost text-xs md:text-sm text-white"
+            >
               Contact Us
             </Link>
           </motion.div>

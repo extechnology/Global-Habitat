@@ -89,10 +89,14 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-50 bg-[var(--ink)] text-white"
+            className="fixed inset-0 z-50 bg-white/70 backdrop-blur-sm text-var-ink"
           >
             <div className="container-luxe flex h-20 items-center justify-between">
-              <span className="text-display text-lg">Global Habitat</span>
+              <img
+                src="/global-logo.png"
+                className="w-20"
+                alt="global-logo"
+              />
               <button
                 aria-label="Close menu"
                 onClick={() => setOpen(false)}
@@ -101,7 +105,7 @@ export function Navbar() {
                 <X className="h-5 w-5" />
               </button>
             </div>
-            <nav className="container-luxe mt-10 flex flex-col gap-6">
+            <nav className="container-luxe mt-10 flex flex-col text-center gap-6">
               {NAV.map((n, i) => (
                 <motion.a
                   key={n.href}
@@ -110,13 +114,13 @@ export function Navbar() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 + i * 0.05, duration: 0.6 }}
-                  className="text-display text-5xl tracking-tight border-b border-white/10 pb-5"
+                  className="text-display text-3xl tracking-tight border-b border-black/10 pb-5"
                 >
                   {n.label}
                 </motion.a>
               ))}
               <a
-                href="#contact"
+                href="/contact"
                 onClick={() => setOpen(false)}
                 className="btn-luxe mt-6 bg-[var(--gold)] border-[var(--gold)] text-[var(--ink)]"
               >
