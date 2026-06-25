@@ -14,7 +14,7 @@ function About() {
     <section id="about" className="relative bg-white py-28 md:py-40">
       <div className="container-luxe grid lg:grid-cols-12 gap-14 lg:gap-20 items-center">
         <div className="lg:col-span-6 relative">
-          <div className="relative aspect-4/5 overflow-hidden rounded-sm">
+          <div className="relative aspect-square overflow-hidden rounded-sm">
             <motion.img
               initial={{ scale: 1.15 }}
               whileInView={{ scale: 1 }}
@@ -54,7 +54,7 @@ function About() {
             </p>
           </Reveal>
 
-          <Stagger className="mt-14 grid grid-cols-2 gap-y-10 gap-x-6 border-t border-[var(--border)] pt-10">
+          <Stagger className="mt-6 grid grid-cols-2 gap-y-8 gap-x-6 border-t border-[var(--border)] pt-8">
             {stats.map((s) => (
               <motion.div variants={staggerItem} key={s.label}>
                 <div className="text-display text-[clamp(2.4rem,4vw,3.4rem)] text-[var(--ink)] leading-none">

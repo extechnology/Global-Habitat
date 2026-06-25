@@ -6,6 +6,10 @@
    Calm, editorial, architectural. Subtle gold. No gradients.
    ========================================================= */
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

@@ -40,7 +40,7 @@ export function FloatingActions() {
             exit={{ opacity: 0, y: 20 }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             aria-label="Back to top"
-            className="fixed bottom-24 right-6 z-40 grid place-items-center h-12 w-12 rounded-full bg-[var(--ink)] text-white shadow-[var(--shadow-soft)] hover:bg-[var(--gold)] hover:text-[var(--ink)] transition-colors"
+            className="fixed bottom-24 right-7 z-40 grid place-items-center h-12 w-12 rounded-full bg-[var(--ink)] text-white shadow-[var(--shadow-soft)] hover:bg-[var(--gold)] hover:text-[var(--ink)] transition-colors"
           >
             <ArrowUp className="h-4 w-4" />
           </motion.button>
