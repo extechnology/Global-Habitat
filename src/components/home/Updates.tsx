@@ -15,9 +15,9 @@ function Updates() {
   return (
     <section
       id="updates"
-      className="relative bg-[var(--accent)] py-28 md:py-36"
+      className="relative bg-[var(--accent)] py-10 md:py-36"
     >
-      <div className="container-luxe grid lg:grid-cols-12 gap-14 items-center">
+      <div className="container-luxe px-4 grid lg:grid-cols-12 gap-8 items-center">
         <div className="lg:col-span-5">
           <Reveal>
             <p className="eyebrow">Construction Updates</p>
@@ -29,13 +29,13 @@ function Updates() {
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="mt-6 text-[var(--muted-foreground)] leading-relaxed max-w-md">
+            <p className="mt-3 text-[var(--muted-foreground)] text-xs md:text-sm leading-relaxed max-w-md">
               Every owner receives photo updates, site videos and engineering
               reports — directly on their dashboard. No follow-ups, no guessing.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <a href="#contact" className="btn-luxe mt-9">
+            <a href="#contact" className="btn-luxe mt-5">
               Track Your Project <ArrowUpRight className="h-4 w-4" />
             </a>
           </Reveal>
@@ -49,12 +49,12 @@ function Updates() {
                 <span className="h-2.5 w-2.5 rounded-full bg-[#F4BF4F]" />
                 <span className="h-2.5 w-2.5 rounded-full bg-[#61C554]" />
               </div>
-              <p className="text-xs uppercase tracking-[0.25em] text-[var(--muted-foreground)]">
+              <p className="text-xs hidden md:block uppercase tracking-[0.25em] text-[var(--muted-foreground)]">
                 Misty Hills · Villa 14
               </p>
               <span className="text-xs text-[var(--gold)]">Live</span>
             </div>
-            <div className="p-8 md:p-10">
+            <div className="p-5 md:p-10">
               <div className="flex items-end justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted-foreground)]">
@@ -68,7 +68,7 @@ function Updates() {
                   Updated · today
                 </p>
               </div>
-              <div className="mt-10 space-y-6">
+              <div className="mt-6 space-y-6">
                 {progress.map((p, i) => (
                   <div key={p.label}>
                     <div className="flex justify-between text-sm text-[var(--ink)]/80 mb-2">

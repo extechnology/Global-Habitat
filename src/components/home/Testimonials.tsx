@@ -6,7 +6,7 @@ import {
   Navigation,
   EffectCoverflow,
 } from "swiper/modules";
-
+import constructionImg from "../../assets/construction.jpeg"
 import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 import "swiper/css";
@@ -43,28 +43,37 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-[#faf9f6] py-28 md:py-36">
-      <div className="container-luxe">
+    <section className="relative overflow-hidden bg-[var(--ink)] py-1 md:py-36">
+      <div className="absolute inset-0 opacity-25">
+        <img
+          src={constructionImg}
+          alt=""
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-[var(--ink)]/75" />
+      </div>
+      <div className="container-luxe px-4">
         <Reveal>
           <p className="eyebrow text-center">Testimonials</p>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h2 className="text-display mx-auto mt-5 max-w-3xl text-center text-[clamp(2rem,4vw,3.6rem)] text-[var(--ink)]">
+          <h2 className="text-display mx-auto mt-3 max-w-3xl text-center text-[clamp(2rem,4vw,3.6rem)] text-white">
             Crafted Homes,
             <span className="italic"> Genuine Experiences</span>
           </h2>
         </Reveal>
 
         <Reveal delay={0.2}>
-          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-8 text-[var(--muted-foreground)]">
+          <p className="mx-auto mt-3 max-w-2xl text-center text-xs md:text-[15px] leading-5 text-[var(--muted-foreground)]">
             Every project is built with attention to detail, transparency, and
             timeless design. Here's what homeowners have to say.
           </p>
         </Reveal>
 
-        <div className="relative mt-20">
-          <button className="testimonial-prev absolute left-0 top-1/2 z-20 hidden -translate-y-1/2 rounded-full border border-black/10 bg-white p-3 shadow-lg transition hover:scale-110 lg:flex">
+        <div className="relative mt-5">
+          <button className="testimonial-prev absolute left-0 top-1/2 z-20 hidden -translate-y-1/2 rounded-full border border-black/10 bg-white p-2 shadow-lg transition hover:scale-110 lg:flex">
             <ChevronLeft size={20} />
           </button>
 
@@ -110,11 +119,11 @@ function Testimonials() {
               scale: 0.9,
               slideShadows: false,
             }}
-            className="!pb-16"
+            className="!pb-5"
           >
             {testimonials.map((item) => (
               <SwiperSlide key={item.name}>
-                <div className="group h-full rounded-md border border-black/5 bg-white p-10 shadow-[0_15px_60px_rgba(0,0,0,.06)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_80px_rgba(0,0,0,.12)]">
+                <div className="group h-full rounded-md border border-black/5 bg-ink p-5 shadow-[0_15px_60px_rgba(0,0,0,.06)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_80px_rgba(0,0,0,.12)]">
                   <div className="flex items-center justify-between">
                     <div className="flex gap-1">
                       {Array.from({ length: 5 }).map((_, i) => (
@@ -133,11 +142,11 @@ function Testimonials() {
                     />
                   </div>
 
-                  <p className="mt-8 text-lg leading-9 text-[var(--ink)] italic">
+                  <p className="mt-4 text-sm md:text-lg leading-9 text-white italic">
                     "{item.quote}"
                   </p>
 
-                  <div className="mt-10 flex items-center gap-4">
+                  <div className="mt-5 flex items-center gap-4">
                     <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--gold)] text-lg font-semibold text-white">
                       {item.name
                         .split(" ")
@@ -147,11 +156,11 @@ function Testimonials() {
                     </div>
 
                     <div>
-                      <h4 className="font-medium text-[var(--ink)]">
+                      <h4 className="font-medium text-xs md:text-sm text-white">
                         {item.name}
                       </h4>
 
-                      <p className="mt-1 text-sm tracking-[0.15em] uppercase text-[var(--muted-foreground)]">
+                      <p className="mt-1 text-xs md:text-sm tracking-[0.15em] uppercase text-[var(--muted-foreground)]">
                         {item.role}
                       </p>
                     </div>

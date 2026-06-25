@@ -112,7 +112,7 @@ function ProjectCard({ project }: { project: Project }) {
           <h3 className="mt-1 text-xl font-light tracking-wide text-zinc-900 sm:text-2xl">
             {project.tower}
           </h3>
-          <p className="mt-1 text-sm leading-6 text-zinc-500">
+          <p className="mt-1 text-xs md:text-sm leading-6 text-zinc-500">
             {project.description}
           </p>
         </div>
@@ -212,11 +212,11 @@ export default function DevelopmentUpdates() {
   }, [onScroll]);
 
   return (
-    <section className="bg-zinc-50 py-14 sm:py-20">
+    <section className="bg-zinc-50 py-8 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Section header */}
-        <div className="mb-10 flex flex-col gap-4 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-5 flex flex-col gap-4 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs uppercase tracking-[6px] text-zinc-400">
               Project Status
@@ -280,7 +280,7 @@ export default function DevelopmentUpdates() {
           </div>
 
           {/* Dot indicators — mobile only */}
-          <div className="mt-6 flex justify-center gap-2 md:hidden">
+          <div className="mt-5 flex justify-center gap-2 md:hidden">
             {projects.map((_, i) => (
               <button
                 key={i}

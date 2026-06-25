@@ -54,25 +54,28 @@ const HorizontalGallery = () => {
         <div
           key={item.title}
           className="
-            group
-            relative
-            h-[320px]
-            min-w-[260px]
-            shrink-0
-            cursor-pointer
-            overflow-hidden
-            rounded-md
-            snap-start
-            transition-all
-            duration-700
-            sm:h-[420px]
-            sm:min-w-[320px]
-            md:h-[500px]
-            md:min-w-[360px]
-            lg:h-[600px]
-            lg:min-w-[400px]
-            lg:hover:min-w-[560px]
-          "
+group
+relative
+
+basis-[85%]
+sm:basis-[70%]
+md:basis-1/2
+xl:basis-[48%]
+
+flex-shrink-0
+
+h-[320px]
+sm:h-[420px]
+md:h-[500px]
+lg:h-[600px]
+
+overflow-hidden
+rounded-md
+snap-start
+cursor-pointer
+transition-all
+duration-700
+"
         >
           {/* Image */}
           <img
@@ -133,9 +136,9 @@ const HorizontalGallery = () => {
               className="
                 mt-3
                 max-w-xs
-                text-base
                 text-white/75
                 sm:mt-5
+                text-xs
                 sm:text-lg
               "
             >
