@@ -16,11 +16,11 @@ function ContactPage() {
           className="h-full w-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-[var(--ink)]/65" />
+        <div className="absolute inset-0 bg-ink/65" />
       </div>
       <div className="relative container-luxe py-28 md:py-36 grid lg:grid-cols-12 gap-12 items-end">
         <Reveal className="lg:col-span-7">
-          <p className="eyebrow text-[var(--gold)]">Let's begin</p>
+          <p className="eyebrow text-gold">Let's begin</p>
           <h2 className="text-display mt-6 text-[clamp(2.4rem,6vw,5.4rem)]">
             Let's build your <br />
             <span className="italic">dream home.</span>
@@ -32,7 +32,7 @@ function ContactPage() {
           <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="#"
-              className="btn-luxe bg-[var(--gold)] border-[var(--gold)] text-[var(--ink)] hover:bg-white hover:border-white"
+              className="btn-luxe bg-gold border-gold text-ink hover:bg-white hover:border-white"
             >
               Book Site Visit <Sparkles className="h-4 w-4" />
             </a>
@@ -42,7 +42,7 @@ function ContactPage() {
           </div>
         </Reveal>
         <Reveal direction="right" className="lg:col-span-5">
-          <div className="glass rounded-sm p-8 md:p-10 text-[var(--ink)] bg-white/85">
+          <div className="glass rounded-sm p-8 md:p-10 text-ink bg-white/85">
             <p className="eyebrow">Get in touch</p>
             <h3 className="text-display text-2xl mt-4">
               Request a private viewing
@@ -50,21 +50,21 @@ function ContactPage() {
             <form className="mt-6 space-y-4">
               <input
                 placeholder="Full name"
-                className="w-full bg-transparent border-b border-[var(--border)] py-3 text-sm outline-none placeholder:text-[var(--muted-foreground)] focus:border-[var(--gold)] transition-colors"
+                className="w-full bg-transparent border-b border-border py-3 text-sm outline-none placeholder:text-muted-foreground focus:border-gold transition-colors"
               />
               <input
                 placeholder="Email"
                 type="email"
-                className="w-full bg-transparent border-b border-[var(--border)] py-3 text-sm outline-none placeholder:text-[var(--muted-foreground)] focus:border-[var(--gold)] transition-colors"
+                className="w-full bg-transparent border-b border-border py-3 text-sm outline-none placeholder:text-muted-foreground focus:border-gold transition-colors"
               />
               <input
                 placeholder="Phone"
-                className="w-full bg-transparent border-b border-[var(--border)] py-3 text-sm outline-none placeholder:text-[var(--muted-foreground)] focus:border-[var(--gold)] transition-colors"
+                className="w-full bg-transparent border-b border-border py-3 text-sm outline-none placeholder:text-muted-foreground focus:border-gold transition-colors"
               />
               <textarea
                 placeholder="Tell us a little about what you're looking for"
                 rows={3}
-                className="w-full bg-transparent border-b border-[var(--border)] py-3 text-sm outline-none placeholder:text-[var(--muted-foreground)] focus:border-[var(--gold)] transition-colors resize-none"
+                className="w-full bg-transparent border-b border-border py-3 text-sm outline-none placeholder:text-muted-foreground focus:border-gold transition-colors resize-none"
               />
               <button type="button" className="btn-luxe w-full mt-3">
                 Schedule a Call

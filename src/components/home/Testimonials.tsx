@@ -43,7 +43,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-[var(--ink)] py-8 md:py-36">
+    <section className="relative overflow-hidden bg-ink py-8 md:py-36">
       <div className="absolute inset-0 opacity-25">
         <img
           src={constructionImg}
@@ -51,7 +51,7 @@ function Testimonials() {
           className="h-full w-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-[var(--ink)]/75" />
+        <div className="absolute inset-0 bg-ink/75" />
       </div>
       <div className="container-luxe px-4">
         <Reveal>
@@ -66,7 +66,7 @@ function Testimonials() {
         </Reveal>
 
         <Reveal delay={0.2}>
-          <p className="mx-auto mt-3 max-w-2xl text-center text-xs md:text-[15px] leading-5 text-[var(--muted-foreground)]">
+          <p className="mx-auto mt-3 max-w-2xl text-center text-xs md:text-[15px] leading-5 text-muted-foreground">
             Every project is built with attention to detail, transparency, and
             timeless design. Here's what homeowners have to say.
           </p>
@@ -119,7 +119,7 @@ function Testimonials() {
               scale: 0.9,
               slideShadows: false,
             }}
-            className="!pb-5"
+            className="pb-5!"
           >
             {testimonials.map((item) => (
               <SwiperSlide key={item.name}>
@@ -137,7 +137,7 @@ function Testimonials() {
                     </div>
 
                     <Quote
-                      className="text-[var(--gold)] opacity-20 transition group-hover:rotate-12 group-hover:opacity-40"
+                      className="text-gold opacity-20 transition group-hover:rotate-12 group-hover:opacity-40"
                       size={42}
                     />
                   </div>
@@ -147,7 +147,7 @@ function Testimonials() {
                   </p>
 
                   <div className="mt-5 flex items-center gap-4">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--gold)] text-lg font-semibold text-white">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gold text-lg font-semibold text-white">
                       {item.name
                         .split(" ")
                         .map((n) => n[0])
@@ -160,7 +160,7 @@ function Testimonials() {
                         {item.name}
                       </h4>
 
-                      <p className="mt-1 text-xs md:text-sm tracking-[0.15em] uppercase text-[var(--muted-foreground)]">
+                      <p className="mt-1 text-xs md:text-sm tracking-[0.15em] uppercase text-muted-foreground">
                         {item.role}
                       </p>
                     </div>

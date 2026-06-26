@@ -20,7 +20,7 @@ function Hero() {
     <section
       id="home"
       ref={ref}
-      className="relative h-[100svh] min-h-[640px] w-full overflow-hidden bg-[var(--ink)]"
+      className="relative h-svh min-h-[640px] w-full overflow-hidden bg-ink"
     >
       <motion.div style={{ y, scale: 1.08 }} className="absolute inset-0">
         <img
@@ -32,7 +32,7 @@ function Hero() {
       </motion.div>
       <motion.div
         style={{ opacity: overlay }}
-        className="absolute inset-0 bg-gradient-to-b from-[var(--ink)]/30 via-[var(--ink)]/40 to-[var(--ink)]/80"
+        className="absolute inset-0 bg-linear-to-b from-ink/30 via-ink/40 to-ink/80"
       />
 
       <div className="relative h-full container-luxe flex flex-col justify-end pb-28 md:pb-32">
@@ -83,7 +83,7 @@ function Hero() {
           >
             <Link
               to="/projects"
-              className="btn-luxe text-xs md:text-sm bg-[var(--gold)] border-[var(--gold)] text-[var(--ink)] hover:bg-white hover:border-white"
+              className="btn-luxe text-xs md:text-sm bg-gold border-gold text-ink hover:bg-white hover:border-white"
             >
               Explore Projects
               <ArrowUpRight className="h-4 w-4" />
@@ -111,7 +111,7 @@ function Hero() {
       </motion.div>
 
       {/* Quiet marquee bar */}
-      <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-[var(--ink)]/60 backdrop-blur-md py-3 overflow-hidden">
+      <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-ink/60 backdrop-blur-md py-3 overflow-hidden">
         <div className="flex gap-12 whitespace-nowrap animate-marquee text-white/50 text-[11px] tracking-[0.3em] uppercase">
           {Array.from({ length: 2 }).flatMap((_, k) =>
             [
@@ -124,7 +124,7 @@ function Hero() {
             ].map((t, i) => (
               <span key={`${k}-${i}`} className="flex items-center gap-12">
                 {t}
-                <span className="h-1 w-1 rounded-full bg-[var(--gold)]" />
+                <span className="h-1 w-1 rounded-full bg-gold" />
               </span>
             )),
           )}
@@ -135,4 +135,3 @@ function Hero() {
 }
 
 export default Hero;
-

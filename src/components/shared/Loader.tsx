@@ -42,7 +42,7 @@ export default function Loader({ onComplete, duration = 2600 }: LoaderProps) {
         transform: exiting ? "translateY(-100%)" : "translateY(0)",
         transition: exiting ? "transform 0.7s cubic-bezier(0.76,0,0.24,1)" : "none",
       }}
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#0e1b1f] overflow-hidden"
+      className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-[#0e1b1f] overflow-hidden"
     >
       {/* Subtle grid pattern overlay */}
       <div
@@ -110,7 +110,7 @@ export default function Loader({ onComplete, duration = 2600 }: LoaderProps) {
 
         {/* Progress bar track */}
         <div className="w-48 sm:w-64">
-          <div className="relative h-[1px] w-full bg-white/10">
+          <div className="relative h-px w-full bg-white/10">
             {/* Animated fill */}
             <div
               className="absolute left-0 top-0 h-full bg-[#c8a96a]"

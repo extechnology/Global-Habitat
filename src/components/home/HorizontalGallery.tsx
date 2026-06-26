@@ -62,7 +62,7 @@ sm:basis-[70%]
 md:basis-1/2
 xl:basis-[48%]
 
-flex-shrink-0
+shrink-0
 
 h-[320px]
 sm:h-[420px]
@@ -96,7 +96,7 @@ duration-700
             className="
               absolute
               inset-0
-              bg-gradient-to-t
+              bg-linear-to-t
               from-black/80
               via-black/20
               to-transparent

@@ -30,7 +30,7 @@ function WhyUs() {
           <p className="eyebrow">Why Choose Us</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <h2 className="text-display mt-5 text-[clamp(2rem,4.4vw,3.6rem)] text-[var(--ink)] max-w-3xl">
+          <h2 className="text-display mt-5 text-[clamp(2rem,4.4vw,3.6rem)] text-ink max-w-3xl">
             Six reasons to trust us with the{" "}
             <span className="italic">most important</span> address of your life.
           </h2>
@@ -48,7 +48,7 @@ function WhyUs() {
                   direction={reverse ? "right" : "left"}
                   className={`lg:col-span-7 ${reverse ? "lg:order-2" : ""}`}
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
+                  <div className="relative aspect-4/3 overflow-hidden rounded-sm">
                     <motion.img
                       initial={{ scale: 1.15 }}
                       whileInView={{ scale: 1 }}
@@ -65,13 +65,13 @@ function WhyUs() {
                   direction={reverse ? "left" : "right"}
                   className={`lg:col-span-5 ${reverse ? "lg:order-1" : ""}`}
                 >
-                  <p className="text-[var(--gold)] text-display italic text-xl">
+                  <p className="text-gold text-display italic text-xl">
                     0{i + 1} / 03
                   </p>
-                  <h3 className="text-display mt-5 text-3xl md:text-4xl text-[var(--ink)]">
+                  <h3 className="text-display mt-5 text-3xl md:text-4xl text-ink">
                     {r.title}
                   </h3>
-                  <p className="mt-6 text-[var(--muted-foreground)] leading-relaxed">
+                  <p className="mt-6 text-muted-foreground leading-relaxed">
                     {r.text}
                   </p>
                   <div className="hairline my-8" />
@@ -83,9 +83,9 @@ function WhyUs() {
                     ].map((b) => (
                       <li
                         key={b}
-                        className="flex items-center gap-3 text-[var(--ink)]/80"
+                        className="flex items-center gap-3 text-ink/80"
                       >
-                        <span className="h-1 w-6 bg-[var(--gold)]" /> {b}
+                        <span className="h-1 w-6 bg-gold" /> {b}
                       </li>
                     ))}
                   </ul>

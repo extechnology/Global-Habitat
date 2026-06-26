@@ -12,6 +12,7 @@ const NAV = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -39,7 +40,7 @@ export function Navbar() {
       transition={{ duration: 0.5, ease: [0.65, 0, 0.35, 1] }}
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
         scrolled
-          ? "bg-white/85 backdrop-blur-xl border-b border-[var(--border)]"
+          ? "bg-white/85 backdrop-blur-xl border-b border-border"
           : "bg-transparent"
       }`}
     >
@@ -55,7 +56,7 @@ export function Navbar() {
               to={n.href}
               className={`text-[12px] tracking-[0.18em] uppercase link-underline transition-colors ${
                 scrolled
-                  ? "text-[var(--ink)]"
+                  ? "text-ink"
                   : "text-white/90 hover:text-white"
               }`}
             >
@@ -73,7 +74,7 @@ export function Navbar() {
             onClick={() => setOpen(true)}
             className={`lg:hidden grid place-items-center h-11 w-11 rounded-full border ${
               scrolled
-                ? "border-[var(--border)] text-[var(--ink)]"
+                ? "border-border text-ink"
                 : "border-white/30 text-white"
             }`}
           >
@@ -122,7 +123,7 @@ export function Navbar() {
               <a
                 href="/contact"
                 onClick={() => setOpen(false)}
-                className="btn-luxe mt-6 bg-[var(--gold)] border-[var(--gold)] text-[var(--ink)]"
+                className="btn-luxe mt-6 bg-gold border-gold text-ink"
               >
                 Book Site Visit
               </a>

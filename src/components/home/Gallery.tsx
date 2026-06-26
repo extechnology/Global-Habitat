@@ -25,33 +25,33 @@ function Gallery() {
   return (
     <section
       id="gallery"
-      className="relative bg-[var(--accent)] py-28 md:py-36"
+      className="relative bg-accent py-28 md:py-36"
     >
       <div className="container-luxe">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <Reveal>
             <p className="eyebrow">Gallery</p>
-            <h2 className="text-display mt-5 text-[clamp(2rem,4.2vw,3.4rem)] text-[var(--ink)] max-w-xl">
+            <h2 className="text-display mt-5 text-[clamp(2rem,4.2vw,3.4rem)] text-ink max-w-xl">
               A study in{" "}
               <span className="italic">light, line and material</span>.
             </h2>
           </Reveal>
         </div>
 
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 [column-fill:_balance]">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 [column-fill:balance]">
           {imgs.map((g, i) => (
             <Reveal key={i} delay={(i % 3) * 0.08}>
               <button
                 onClick={() => setOpen(g.src)}
                 className={`mb-5 block w-full overflow-hidden rounded-sm group ${
-                  g.h === "tall" ? "aspect-[3/4]" : "aspect-[4/3]"
+                  g.h === "tall" ? "aspect-3/4" : "aspect-4/3"
                 }`}
               >
                 <img
                   src={g.src}
                   alt=""
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-[2000ms] ease-[cubic-bezier(.65,0,.35,1)] group-hover:scale-110"
+                  className="h-full w-full object-cover transition-transform duration-2000 ease-[cubic-bezier(.65,0,.35,1)] group-hover:scale-110"
                 />
               </button>
             </Reveal>
@@ -65,7 +65,7 @@ function Gallery() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setOpen(null)}
-          className="fixed inset-0 z-[70] bg-[var(--ink)]/95 backdrop-blur-md grid place-items-center p-6 cursor-zoom-out"
+          className="fixed inset-0 z-70 bg-(--ink)/95 backdrop-blur-md grid place-items-center p-6 cursor-zoom-out"
         >
           <button
             onClick={() => setOpen(null)}
@@ -80,7 +80,7 @@ function Gallery() {
             transition={{ duration: 0.5 }}
             src={open}
             alt=""
-            className="max-h-[88vh] max-w-[88vw] object-contain rounded-sm shadow-[var(--shadow-elevate)]"
+            className="max-h-[88vh] max-w-[88vw] object-contain rounded-sm shadow-(--shadow-elevate)"
           />
         </motion.div>
       )}

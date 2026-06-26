@@ -51,11 +51,11 @@ const COLS = [
 
 export function Footer() {
   return (
-    <footer className="bg-[var(--ink)] text-white">
+    <footer className="bg-ink text-white">
       <div className="container-luxe pt-10 md:pt-24 pb-12">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
-            <p className="eyebrow text-[var(--gold)]">Global Habitat</p>
+            <p className="eyebrow text-gold">Global Habitat</p>
             <h3 className="text-display text-4xl md:text-5xl mt-4 max-w-md">
               Crafting homes that quietly outlast trends.
             </h3>
@@ -65,7 +65,7 @@ export function Footer() {
                 placeholder="Your email for occasional updates"
                 className="flex-1 bg-transparent outline-none text-sm placeholder:text-white/40"
               />
-              <button className="grid place-items-center h-10 w-10 rounded-full bg-[var(--gold)] text-[var(--ink)] hover:rotate-45 transition-transform">
+              <button className="grid place-items-center h-10 w-10 rounded-full bg-gold text-ink hover:rotate-45 transition-transform">
                 <ArrowUpRight className="h-4 w-4" />
               </button>
             </form>
@@ -84,7 +84,7 @@ export function Footer() {
                       {link.href ? (
                         <Link
                           to={link.href.startsWith("/") ? link.href : ""}
-                          className="text-sm text-white/80 hover:text-[var(--gold)] transition-colors"
+                          className="text-sm text-white/80 hover:text-gold transition-colors"
                         >
                           {link.label}
                         </Link>
@@ -116,17 +116,17 @@ export function Footer() {
               <a
                 key={i}
                 href="#"
-                className="hover:text-[var(--gold)] transition-colors"
+                className="hover:text-gold transition-colors"
               >
                 <Icon className="h-4 w-4" />
               </a>
             ))}
           </div>
           <div className="flex items-center gap-5 text-xs text-white/40">
-            <Link to="/privacy" className="hover:text-[var(--gold)]">
+            <Link to="/privacy" className="hover:text-gold">
               Privacy
             </Link>
-            <Link to="/terms" className="hover:text-[var(--gold)]">
+            <Link to="/terms" className="hover:text-gold">
               Terms
             </Link>
           </div>

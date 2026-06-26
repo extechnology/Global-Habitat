@@ -31,7 +31,7 @@ function Projects() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <Reveal>
             <p className="eyebrow">Featured Projects</p>
-            <h2 className="text-display mt-5 text-[clamp(2rem,4.2vw,3.4rem)] text-[var(--ink)] max-w-xl">
+            <h2 className="text-display mt-5 text-[clamp(2rem,4.2vw,3.4rem)] text-ink max-w-xl">
               Two addresses. <span className="italic">Distinctly</span> ours.
             </h2>
           </Reveal>
@@ -49,14 +49,14 @@ function Projects() {
           {projects.map((p, i) => (
             <Reveal key={p.name} delay={i * 0.1}>
               <article className="group">
-                <div className="relative aspect-[5/6] overflow-hidden rounded-sm bg-[var(--muted)]">
+                <div className="relative aspect-square overflow-hidden rounded-sm bg-muted">
                   <motion.img
                     src={p.img}
                     alt={`${p.name} — ${p.location}`}
                     loading="lazy"
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1800ms] ease-[cubic-bezier(.65,0,.35,1)] group-hover:scale-110"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-1800 ease-[cubic-bezier(.65,0,.35,1)] group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/65 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[var(--ink)]/65 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
                   <div className="absolute top-6 left-6">
                     <span
                       className={`inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] px-3 py-1.5 rounded-full backdrop-blur-md ${
