@@ -1,103 +1,89 @@
 import { motion } from "framer-motion";
-import { Reveal } from "../shared/Reveal";
-import g1 from "../../assets/gallery-1.jpeg";
+import { Reveal, Stagger, staggerItem } from "../shared/Reveal";
 import g5 from "../../assets/gallery-5.jpeg";
-import g3 from "../../assets/gallery-3.jpeg";
+
+const values = [
+  {
+    title: "Loyalty",
+    text: "We build lifelong relationships with our customers and honor the trust you place in us.",
+  },
+  {
+    title: "Integrity",
+    text: "We act with honesty and unity, letting our values guide every decision.",
+  },
+  {
+    title: "Functionality",
+    text: "Our homes maximize space and comfort, blending beauty with practical design.",
+  },
+  {
+    title: "Excellence",
+    text: "We strive for excellence in every detail and every project.",
+  },
+];
 
 function WhyUs() {
-  const rows = [
-    {
-      title: "Luxury Design",
-      text: "Every layout is studied for light, proportion, and the way a family actually lives.",
-      img: g1,
-    },
-    {
-      title: "Eco-conscious Construction",
-      text: "We build for the next generation — solar-ready roofs, native landscaping, low-VOC interiors.",
-      img: g5,
-    },
-    {
-      title: "Smart Homes & Transparent Pricing",
-      text: "Integrated automation comes standard. Pricing is itemised, with no surprises at handover.",
-      img: g3,
-    },
-  ];
-
   return (
-    <section className="relative bg-white py-28 md:py-36">
+    <section className="bg-white py-8 md:py-24">
       <div className="container-luxe">
-        <Reveal>
-          <p className="eyebrow">Why Choose Us</p>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <h2 className="text-display mt-5 text-[clamp(2rem,4.4vw,3.6rem)] text-ink max-w-3xl">
-            Six reasons to trust us with the{" "}
-            <span className="italic">most important</span> address of your life.
-          </h2>
-        </Reveal>
+        <div className="grid lg:grid-cols-2 md:gap-12 gap-6 lg:gap-16 items-start">
+          {/* Left — Text content */}
+          <Reveal direction="left">
+            <p className="eyebrow text-gold">What Drives Us</p>
+            <h2 className="text-display mt-3 text-[clamp(1.8rem,3.5vw,2.8rem)] text-ink">
+              Our Guiding Principles
+            </h2>
+            <p className="mt-3 text-muted-foreground text-justify text-sm md:text-base leading-[1.9]">
+              At the heart of every project, we are guided by integrity,
+              quality, innovation, and customer satisfaction. We believe in
+              creating exceptional living spaces that combine modern design,
+              superior craftsmanship, and lasting value. Transparency, trust,
+              and timely delivery define every relationship we build. Our
+              commitment to sustainable development and attention to every
+              detail ensure that each villa reflects excellence, comfort, and
+              elegance, providing homeowners with a lifestyle that exceeds
+              expectations for generations to come.
+            </p>
 
-        <div className="mt-20 flex flex-col gap-28 md:gap-40">
-          {rows.map((r, i) => {
-            const reverse = i % 2 === 1;
-            return (
-              <div
-                key={r.title}
-                className={`grid lg:grid-cols-12 gap-10 lg:gap-16 items-center`}
-              >
-                <Reveal
-                  direction={reverse ? "right" : "left"}
-                  className={`lg:col-span-7 ${reverse ? "lg:order-2" : ""}`}
-                >
-                  <div className="relative aspect-4/3 overflow-hidden rounded-sm">
-                    <motion.img
-                      initial={{ scale: 1.15 }}
-                      whileInView={{ scale: 1 }}
-                      viewport={{ once: true, amount: 0.3 }}
-                      transition={{ duration: 1.8, ease: [0.65, 0, 0.35, 1] }}
-                      src={r.img}
-                      alt={r.title}
-                      loading="lazy"
-                      className="absolute inset-0 h-full w-full object-cover"
-                    />
-                  </div>
-                </Reveal>
-                <Reveal
-                  direction={reverse ? "left" : "right"}
-                  className={`lg:col-span-5 ${reverse ? "lg:order-1" : ""}`}
-                >
-                  <p className="text-gold text-display italic text-xl">
-                    0{i + 1} / 03
+            <div className="hairline my-5" />
+
+            {/* Values list */}
+            <Stagger
+              className="space-y-4"
+              delayChildren={0.05}
+              staggerChildren={0.1}
+            >
+              {values.map((v) => (
+                <motion.div key={v.title} variants={staggerItem}>
+                  <p className="text-display text-sm font-semibold text-ink">
+                    {v.title}
                   </p>
-                  <h3 className="text-display mt-5 text-3xl md:text-4xl text-ink">
-                    {r.title}
-                  </h3>
-                  <p className="mt-6 text-muted-foreground leading-relaxed">
-                    {r.text}
+                  <p className="mt-1 text-muted-foreground text-sm leading-relaxed">
+                    {v.text}
                   </p>
-                  <div className="hairline my-8" />
-                  <ul className="space-y-3 text-sm">
-                    {[
-                      "Premium materials",
-                      "Prime locations",
-                      "Affordable pricing",
-                    ].map((b) => (
-                      <li
-                        key={b}
-                        className="flex items-center gap-3 text-ink/80"
-                      >
-                        <span className="h-1 w-6 bg-gold" /> {b}
-                      </li>
-                    ))}
-                  </ul>
-                </Reveal>
-              </div>
-            );
-          })}
+                </motion.div>
+              ))}
+            </Stagger>
+          </Reveal>
+
+          {/* Right — Image */}
+          <Reveal direction="right" className="lg:sticky lg:top-28">
+            <div className="relative aspect-square overflow-hidden rounded-sm shadow-soft">
+              <motion.img
+                initial={{ scale: 1.12 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1.6, ease: [0.65, 0, 0.35, 1] }}
+                src={g5}
+                alt="Our Guiding Principles — Global Habitat"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>
   );
 }
 
-
-export default WhyUs
+export default WhyUs;
