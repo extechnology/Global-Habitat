@@ -56,13 +56,13 @@ function Projects() {
                     loading="lazy"
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-1800 ease-[cubic-bezier(.65,0,.35,1)] group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-[var(--ink)]/65 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-t from-ink/65 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
                   <div className="absolute top-6 left-6">
                     <span
                       className={`inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] px-3 py-1.5 rounded-full backdrop-blur-md ${
                         p.status === "Ongoing"
-                          ? "bg-[var(--gold)]/90 text-[var(--ink)]"
-                          : "bg-white/85 text-[var(--ink)]"
+                          ? "bg-gold/90 text-ink"
+                          : "bg-white/85 text-ink"
                       }`}
                     >
                       <span className="h-1.5 w-1.5 rounded-full bg-current" />
@@ -82,7 +82,7 @@ function Projects() {
                   </div>
                 </div>
                 <div className="grid md:grid-cols-12 gap-6 mt-7 items-start">
-                  <p className="md:col-span-8 text-[var(--muted-foreground)] leading-relaxed">
+                  <p className="md:col-span-8 text-muted-foreground leading-relaxed">
                     {p.desc}
                   </p>
                   <a

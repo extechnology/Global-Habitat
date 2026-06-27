@@ -19,7 +19,7 @@ function About() {
               initial={{ scale: 1.15 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: .8, ease: [0.65, 0, 0.35, 1] }}
+              transition={{ duration: 0.8, ease: [0.65, 0, 0.35, 1] }}
               src="/about.jpeg"
               alt="Modern luxury villa exterior with infinity pool"
               loading="lazy"
@@ -40,17 +40,21 @@ function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="text-display mt-3 text-[clamp(2rem,4.4vw,3.6rem)] text-ink">
-              Architecture as a <span className="italic">quiet</span> language
-              of home.
+              Visionary Builder <span className="">Transforming</span> Urban
+              Living
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 text-muted-foreground text-justify text-xs md:text-sm leading-[1.85] max-w-xl">
-              Global Habitat Pvt. Ltd. develops premium villas and modern
-              residential communities that combine sophisticated architecture
-              with sustainable living. Every project is designed to offer
-              affordable luxury while maintaining exceptional quality and
-              attention to detail.
+              Global Habitat Pvt. Ltd. is a premier real estate developer
+              committed to creating affordable luxury spaces that redefine
+              modern living. With a focus on innovation, quality, and customer
+              satisfaction, we're transforming the urban landscape in Calicut &
+              Coimbatore. Our developments blend contemporary design with
+              practical functionality, creating spaces that enhance your
+              lifestyle while remaining accessible. Every project reflects our
+              commitment to excellence and our vision for the future of urban
+              living.
             </p>
           </Reveal>
 

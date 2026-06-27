@@ -13,11 +13,11 @@ const LeftContent = () => {
     >
       {/* Heading */}
       <h2 className="text-3xl font-light leading-[1.1] tracking-tight text-neutral-900 sm:text-4xl">
-        Representing
+        Experience Living
         <br />
-        the Epitome
+        Refined
         <br />
-        of Luxury
+        Living
       </h2>
 
       {/* Divider */}
@@ -25,15 +25,12 @@ const LeftContent = () => {
 
       {/* Description */}
       <p className="text-xs md:text-[15px] leading-6 text-neutral-600 text-justify sm:text-[16px]">
-        Global Habitat creates thoughtfully crafted homes where timeless
-        architecture, modern luxury and nature come together to deliver an
-        extraordinary living experience.
-      </p>
-
-      <p className="mt-2 text-xs md:text-[15px] leading-6 text-neutral-600 text-justify sm:text-[16px]">
-        Every residence is designed with exceptional attention to detail,
-        premium finishes and sustainable living principles that enrich everyday
-        life.
+        A Premier luxyry villa developer in Kerala, dedicated to creating
+        elegant homes that combine contemporary architecture, exceptional
+        craftsmanship, and premium amenities. With a commitment to quality,
+        innovation, and customer satisfaction, we deliver thoughtfully designed
+        residents that offer comfort, sophistication and lasting value in
+        carefully selected locations.{" "}
       </p>
 
       {/* CTA */}

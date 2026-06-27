@@ -65,7 +65,7 @@ function Gallery() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setOpen(null)}
-          className="fixed inset-0 z-70 bg-(--ink)/95 backdrop-blur-md grid place-items-center p-6 cursor-zoom-out"
+          className="fixed inset-0 z-70 bg-ink/95 backdrop-blur-md grid place-items-center p-6 cursor-zoom-out"
         >
           <button
             onClick={() => setOpen(null)}
