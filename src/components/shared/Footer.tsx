@@ -56,7 +56,7 @@ export function Footer() {
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <p className="eyebrow text-gold">Global Habitat</p>
-            <h3 className="text-display text-4xl md:text-5xl mt-4 max-w-md">
+            <h3 className="text-display text-2xl md:text-3xl mt-4 max-w-md">
               Your Signature Address Starts Here.
             </h3>
             <form className="mt-10 flex items-center gap-3 border-b border-white/15 pb-3 max-w-md">

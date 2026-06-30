@@ -23,7 +23,7 @@ function Updates() {
             <p className="eyebrow">Construction Updates</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-display mt-5 text-[clamp(2rem,4.2vw,3.4rem)] text-ink">
+            <h2 className="text-display mt-5 text-[clamp(2rem,4.2vw,2.7rem)] text-ink">
               Watch your home <span className="italic">take shape</span>,
               weekly.
             </h2>

@@ -29,7 +29,7 @@ function WhyUs() {
           {/* Left — Text content */}
           <Reveal direction="left">
             <p className="eyebrow text-gold">What Drives Us</p>
-            <h2 className="text-display mt-3 text-[clamp(1.8rem,3.5vw,2.8rem)] text-ink">
+            <h2 className="text-display mt-3 text-[clamp(1.8rem,3.5vw,2.7rem)] text-ink">
               Our Guiding Principles
             </h2>
             <p className="mt-3 text-muted-foreground text-justify text-sm md:text-base leading-[1.9]">

@@ -46,7 +46,7 @@ function Philosophy() {
         <div className="grid md:grid-cols-12 gap-5 items-end mb-5">
           <Reveal className="md:col-span-7">
             <p className="eyebrow">Our Philosophy</p>
-            <h2 className="text-display mt-4 text-[clamp(2rem,4.2vw,3.4rem)] text-ink">
+            <h2 className="text-display mt-4 text-[clamp(2rem,4.2vw,2.7rem)] text-ink">
               Six principles that shape every{" "}
               <span className="italic">square foot</span>.
             </h2>

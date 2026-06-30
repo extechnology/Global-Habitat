@@ -33,6 +33,7 @@ export function Navbar() {
     document.body.style.overflow = open ? "hidden" : "";
   }, [open]);
 
+
   return (
     <motion.header
       initial={{ y: 0 }}

@@ -32,7 +32,7 @@ function ArchitecturalExcellence() {
             <p className="eyebrow">Our Portfolio</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-display mt-4 text-[clamp(1.8rem,3.5vw,2.8rem)] text-ink">
+            <h2 className="text-display mt-4 text-[clamp(1.8rem,3.5vw,2.7rem)] text-ink">
               Architectural Excellence
             </h2>
           </Reveal>

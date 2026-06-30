@@ -9,7 +9,7 @@ function AboutCTA() {
           <p className="eyebrow">Get Started</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <h2 className="text-display mt-4 text-[clamp(1.8rem,3.5vw,2.8rem)] text-ink">
+          <h2 className="text-display mt-4 text-[clamp(1.8rem,3.5vw,2.7rem)] text-ink">
             Begin Your Homeownership Journey
           </h2>
         </Reveal>

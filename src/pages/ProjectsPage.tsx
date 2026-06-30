@@ -31,7 +31,7 @@ function Projects() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <Reveal>
             <p className="eyebrow">Featured Projects</p>
-            <h2 className="text-display mt-5 text-[clamp(2rem,4.2vw,3.4rem)] text-ink max-w-xl">
+            <h2 className="text-display mt-5 text-[clamp(2rem,4.2vw,2.7rem)] text-ink max-w-xl">
               Two addresses. <span className="italic">Distinctly</span> ours.
             </h2>
           </Reveal>
@@ -76,7 +76,7 @@ function Projects() {
                     <div className="flex items-center gap-2 text-[11px] tracking-[0.25em] uppercase text-white/75">
                       <MapPin className="h-3.5 w-3.5" /> {p.location}
                     </div>
-                    <h3 className="text-display mt-3 text-4xl md:text-5xl">
+                    <h3 className="text-display mt-3 text-3xl md:text-4xl">
                       {p.name}
                     </h3>
                   </div>

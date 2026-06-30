@@ -39,7 +39,7 @@ function About() {
             <p className="eyebrow">About Global Habitat</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-display mt-3 text-[clamp(2rem,4.4vw,3.6rem)] text-ink">
+            <h2 className="text-display mt-3 text-[clamp(2rem,4.4vw,2.7rem)] max-w-xl text-ink">
               Visionary Builder <span className="">Transforming</span> Urban
               Living
             </h2>

@@ -125,8 +125,8 @@ duration-700
                 text-2xl
                 font-light
                 leading-tight
-                sm:text-3xl
-                lg:text-4xl
+                sm:text-2xl
+                lg:text-3xl
               "
             >
               {item.title}

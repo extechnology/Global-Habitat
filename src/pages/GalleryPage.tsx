@@ -289,7 +289,7 @@ export default function GalleryPage() {
           <div className="container-luxe relative px-4">
             <Reveal>
               <p className="eyebrow text-gold">Our Portfolio</p>
-              <h1 className="text-display mt-4 text-[clamp(2.2rem,5vw,4rem)] text-white leading-[1.05]">
+              <h1 className="text-display mt-4 text-[clamp(2.2rem,5vw,2.9rem)] text-white leading-[1.05]">
                 Gallery of{" "}
                 <span className="italic text-gold">Spaces</span>
               </h1>

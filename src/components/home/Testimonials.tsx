@@ -59,7 +59,7 @@ function Testimonials() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h2 className="text-display mx-auto mt-3 max-w-3xl text-center text-[clamp(2rem,4vw,3.6rem)] text-white">
+          <h2 className="text-display mx-auto mt-3 max-w-3xl text-center text-[clamp(2rem,4vw,2.7rem)] text-white">
             Crafted Homes,
             <span className="italic"> Genuine Experiences</span>
           </h2>
