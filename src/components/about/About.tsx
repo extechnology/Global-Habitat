@@ -11,7 +11,7 @@ function About() {
   ];
 
   return (
-    <section id="about" className="relative bg-white py-6 md:py-40 px-0">
+    <section id="about" className="relative bg-white py-6 md:py-20 px-0">
       <div className="container-luxe grid lg:grid-cols-12 gap-9 lg:gap-20 px-3 items-center">
         <div className="lg:col-span-6 relative">
           <div className="relative aspect-square overflow-hidden">

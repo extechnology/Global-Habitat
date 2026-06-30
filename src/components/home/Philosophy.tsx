@@ -41,7 +41,7 @@ function Philosophy() {
   ];
 
   return (
-    <section className="relative bg-accent py-5 md:py-32">
+    <section className="relative bg-accent py-5 md:py-20">
       <div className="container-luxe px-4">
         <div className="grid md:grid-cols-12 gap-5 items-end mb-5">
           <Reveal className="md:col-span-7">

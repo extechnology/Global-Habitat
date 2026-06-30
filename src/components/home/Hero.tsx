@@ -57,7 +57,7 @@ function Hero() {
                     delay: 0.4 + i * 0.18,
                     ease: [0.65, 0, 0.35, 1],
                   }}
-                  className="block italic font-light"
+                  className="block  font-light"
                 >
                   {line}
                 </motion.span>

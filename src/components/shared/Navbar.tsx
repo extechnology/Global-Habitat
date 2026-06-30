@@ -44,20 +44,18 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="container-luxe flex h-20 items-center justify-between">
+      <div className="container-luxe flex  items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5 group">
-          <img src="/global-logo.png" className="w-20" alt="global-logo" />
+          <img src="/global-logo.png" className="w-26" alt="global-logo" />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className="hidden text-display lg:flex items-center gap-9">
           {NAV.map((n) => (
             <Link
               key={n.href}
               to={n.href}
               className={`text-[12px] tracking-[0.18em] uppercase link-underline transition-colors ${
-                scrolled
-                  ? "text-ink"
-                  : "text-white/90 hover:text-white"
+                scrolled ? "text-ink" : "text-white/90 hover:text-white"
               }`}
             >
               {n.label}
@@ -65,7 +63,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex text-display items-center gap-3">
           <Link to="/contact" className="hidden md:inline-flex btn-luxe">
             Book Site Visit
           </Link>
@@ -73,9 +71,7 @@ export function Navbar() {
             aria-label="Open menu"
             onClick={() => setOpen(true)}
             className={`lg:hidden grid place-items-center h-11 w-11 rounded-full border ${
-              scrolled
-                ? "border-border text-ink"
-                : "border-white/30 text-white"
+              scrolled ? "border-border text-ink" : "border-white/30 text-white"
             }`}
           >
             <Menu className="h-5 w-5" />
@@ -93,11 +89,7 @@ export function Navbar() {
             className="fixed inset-0 z-50 bg-white/70 backdrop-blur-sm text-var-ink"
           >
             <div className="container-luxe flex h-20 items-center justify-between">
-              <img
-                src="/global-logo.png"
-                className="w-20"
-                alt="global-logo"
-              />
+              <img src="/global-logo.png" className="w-20" alt="global-logo" />
               <button
                 aria-label="Close menu"
                 onClick={() => setOpen(false)}

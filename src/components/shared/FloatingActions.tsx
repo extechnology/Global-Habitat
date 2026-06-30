@@ -13,6 +13,8 @@ export function FloatingActions() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const message = encodeURIComponent("May I know more about the products?");
+
   return (
     <>
       <motion.div
@@ -21,9 +23,10 @@ export function FloatingActions() {
       />
 
       <a
-        href="https://wa.me/919999999999"
+        href={`https://wa.me/918589830300?text=${message}`}
         target="_blank"
         rel="noreferrer"
+        title="connect to whatsapp"
         aria-label="Chat on WhatsApp"
         className="fixed bottom-6 right-6 z-40 grid place-items-center h-14 w-14 rounded-full bg-[#25D366] text-white shadow-elevate hover:scale-105 transition-transform"
       >

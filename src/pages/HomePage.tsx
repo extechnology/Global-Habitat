@@ -2,13 +2,13 @@
 // import Amenities from "../components/home/Amenities"
 // import Gallery from "../components/home/Gallery"
 // import Quality from "../components/home/Quality";
+// import ImageCarousel from "../components/home/ImageCarousel";
 import Hero from "../components/home/Hero";
 import Philosophy from "../components/home/Philosophy";
 import Testimonials from "../components/home/Testimonials";
 import Updates from "../components/home/Updates";
 import Developments from "../components/home/DevelopmentUpdates";
 import About from "../components/about/About";
-import ImageCarousel from "../components/home/ImageCarousel";
 import VideoSection from "../components/home/VideoSection";
 import ImagesAndContent from "../components/home/ImagesAndContent";
 
@@ -17,7 +17,7 @@ const HomePage = () => {
     <div>
       <Hero />
       <About />
-      <ImageCarousel />
+      {/* <ImageCarousel /> */}
       <Developments />
       <VideoSection />
       <Philosophy />

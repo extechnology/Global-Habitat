@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @source "../src";
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
 /* =========================================================
    Global Habitat — Premium Luxury Real Estate Design System
    Calm, editorial, architectural. Subtle gold. No gradients.
@@ -28,9 +28,9 @@
   --color-gold: var(--gold);
   --color-ink: var(--ink);
 
-  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --font-display: "Cormorant Garamond", serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-alt: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-alt: "Inter", ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: 4px;
   --radius-md: 8px;
