@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Reveal } from "../components/shared/Reveal";
 import { Sparkles, Phone, X } from "lucide-react";
-import ctaImg from "../assets/cta.jpeg";
 
 function ContactPage() {
   const [showContactPopup, setShowContactPopup] = useState(false);
@@ -14,7 +13,7 @@ function ContactPage() {
     >
       <div className="absolute inset-0">
         <img
-          src={ctaImg}
+          src="/1080  1920 contact-02.jpg.webp"
           alt=""
           className="h-full w-full object-cover"
           loading="lazy"

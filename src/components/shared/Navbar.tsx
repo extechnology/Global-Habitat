@@ -87,7 +87,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-50 bg-white/70 backdrop-blur-sm text-var-ink"
+            className="fixed inset-0 z-50 bg-white backdrop-blur-md text-var-ink"
           >
             <div className="container-luxe flex h-20 items-center justify-between">
               <img src="/global-logo.png" className="w-20" alt="global-logo" />
@@ -99,7 +99,7 @@ export function Navbar() {
                 <X className="h-5 w-5" />
               </button>
             </div>
-            <nav className="container-luxe mt-10 flex flex-col text-center gap-6">
+            <nav className="container-luxe py-10  bg-white/70 backdrop-blur-md flex flex-col text-center gap-6">
               {NAV.map((n, i) => (
                 <motion.a
                   key={n.href}

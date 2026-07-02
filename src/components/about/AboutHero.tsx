@@ -3,6 +3,7 @@ import { Reveal } from "../shared/Reveal";
 function AboutHero() {
   return (
     <section className="relative bg-white pt-32 pb-8 md:pt-44 md:pb-10 px-4">
+      <div className="absolute inset-x-0 top-0 h-32 bg-linear-to-b from-zinc-500 via-zinc-400/50 to-transparent pointer-events-none" />{" "}
       <div className="container-luxe">
         <Reveal>
           <p className="eyebrow">About Us</p>
