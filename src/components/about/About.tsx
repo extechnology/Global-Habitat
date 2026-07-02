@@ -61,10 +61,10 @@ function About() {
           <Stagger className="mt-3 grid grid-cols-2 gap-y-8 gap-x-6 border-t border-border pt-5">
             {stats.map((s) => (
               <motion.div variants={staggerItem} key={s.label}>
-                <div className="text-display text-xs text-[clamp(2.4rem,4vw,3.4rem)] text-ink leading-none">
+                <div className="text-display text-center md:text-start text-xs text-[clamp(2.4rem,4vw,3.4rem)] text-ink leading-none">
                   <Counter value={s.value} suffix={s.suffix} />
                 </div>
-                <p className="mt-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                <p className="mt-2 text-xs text-center md:text-start uppercase tracking-[0.2em] text-muted-foreground">
                   {s.label}
                 </p>
               </motion.div>
