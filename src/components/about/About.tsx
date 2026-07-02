@@ -13,7 +13,7 @@ function About() {
   return (
     <section id="about" className="relative bg-white py-6 md:py-20 px-0">
       <div className="container-luxe grid lg:grid-cols-12 gap-9 lg:gap-20 px-3 items-center">
-        <div className="lg:col-span-6 relative">
+        <div className="lg:col-span-6 relative order-2 lg:order-1">
           <div className="relative aspect-square overflow-hidden">
             <motion.img
               initial={{ scale: 1.15 }}
@@ -28,13 +28,13 @@ function About() {
           </div>
           <div className="absolute -bottom-8 -right-4 md:-right-8 hidden md:block glass rounded-sm px-7 py-3 max-w-[260px] shadow-soft">
             <p className="eyebrow">Est. 2014</p>
-            <p className="text-display text-xl mt-2 leading-snug text-ink">
+            <p className="text-display capitalize italic text-lg mt-2 leading-snug text-ink">
               A decade of building quietly remarkable homes.
             </p>
           </div>
         </div>
 
-        <div className="lg:col-span-6">
+        <div className="lg:col-span-6 order-1 lg:order-2">
           <Reveal>
             <p className="eyebrow">About Global Habitat</p>
           </Reveal>
