@@ -45,7 +45,7 @@ function Hero() {
             Global Habitat Pvt. Ltd.
           </motion.p>
 
-          <h1 className="text-display hidden md:block mt-6 text-[clamp(1rem,5vw,3.7rem)] text-white">
+          <h1 className="text-display mt-6 text-[clamp(1rem,5vw,3.7rem)] text-white">
             {headline.map((line, i) => (
               <span key={i} className="block overflow-hidden">
                 <motion.span
