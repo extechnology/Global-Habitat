@@ -280,11 +280,11 @@ export default function GalleryPage() {
         <div className="relative overflow-hidden bg-ink pt-32 pb-20 md:pt-40 md:pb-24">
           {/* Subtle background image */}
           <img
-            src={tab === "upcoming" ? mistyImg : aboutImg}
+            src={tab === "upcoming" ? "/1080  1920 Home banner-01.jpg.webp" : "/1080  1920 Home banner-01.jpg.webp"}
             alt=""
-            className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-10 transition-[src] duration-700"
+            className="pointer-events-none absolute inset-0 h-full w-full object-cover transition-[src] duration-700"
           />
-          <div className="absolute inset-0 bg-linear-to-b from-ink/60 to-ink" />
+          <div className="absolute inset-0 bg-linear-to-b from-ink/30 to-ink/70" />
 
           <div className="container-luxe relative px-4">
             <Reveal>

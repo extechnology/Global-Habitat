@@ -42,7 +42,7 @@ export default function Loader({ onComplete, duration = 2600 }: LoaderProps) {
         transform: exiting ? "translateY(-100%)" : "translateY(0)",
         transition: exiting ? "transform 0.7s cubic-bezier(0.76,0,0.24,1)" : "none",
       }}
-      className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-[#233c44] overflow-hidden"
+      className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-[#0e1b1f] overflow-hidden"
     >
       {/* Subtle grid pattern overlay */}
       <div
@@ -84,7 +84,7 @@ export default function Loader({ onComplete, duration = 2600 }: LoaderProps) {
             Est. 2014
           </p>
 
-          <img src="/global-logo.png" className="w-30 h-auto" alt="logo" />
+          <img src="/Global Habitat - png (2).webp" className="w-30 h-auto" alt="logo" />
 
           <div className="mx-auto mt-5 h-px w-10 bg-[#c8a96a]" />
         </div>
