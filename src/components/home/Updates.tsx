@@ -18,7 +18,7 @@ function Updates() {
       className="relative bg-accent py-8 md:py-20"
     >
       <div className="container-luxe px-4 grid lg:grid-cols-12 gap-8 items-center">
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5 order-2 lg:order-1">
           <Reveal>
             <p className="eyebrow">Construction Updates</p>
           </Reveal>
@@ -41,7 +41,7 @@ function Updates() {
           </Reveal>
         </div>
 
-        <Reveal direction="right" className="lg:col-span-7">
+        <Reveal direction="right" className="lg:col-span-7 order-1 lg:order-2">
           <div className="bg-white rounded-md border border-border shadow-soft overflow-hidden">
             <div className="flex items-center justify-between px-6 py-4 border-b border-border">
               <div className="flex items-center gap-2">

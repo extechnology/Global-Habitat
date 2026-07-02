@@ -18,7 +18,7 @@ function ContactPage() {
           className="h-full w-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-ink/65" />
+        <div className="absolute inset-0 bg-ink/40" />
       </div>
       <div className="relative container-luxe py-28 md:py-36 grid lg:grid-cols-12 gap-12 items-end">
         <Reveal className="lg:col-span-7">

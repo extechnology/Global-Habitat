@@ -282,7 +282,7 @@ export default function GalleryPage() {
           <img
             src={tab === "upcoming" ? "/1080  1920 Home banner-01.jpg.webp" : "/1080  1920 Home banner-01.jpg.webp"}
             alt=""
-            className="pointer-events-none absolute inset-0 h-full w-full object-cover transition-[src] duration-700"
+            className="pointer-events-none absolute inset-0 h-auto w-full  transition-[src] duration-700"
           />
           <div className="absolute inset-0 bg-linear-to-b from-ink/30 to-ink/70" />
 

@@ -59,19 +59,21 @@ function Philosophy() {
           </Reveal>
         </div>
 
-        <Stagger className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-sm overflow-hidden">
+        <Stagger className="grid sm:grid-cols-2  lg:grid-cols-3 gap-px bg-border rounded-sm overflow-hidden">
           {items.map((it) => (
             <motion.div
               variants={staggerItem}
               key={it.title}
               className="group bg-white p-5 md:p-12 transition-colors duration-500 hover:bg-ink hover:text-white"
             >
-              <it.icon className="h-7 w-7 stroke-[1.25] text-gold transition-transform duration-700 group-hover:rotate-[8deg]" />
-              <h3 className="text-display text-xl mt-3">{it.title}</h3>
-              <p className="mt-2 text-xs md:text-sm leading-relaxed text-muted-foreground group-hover:text-white/65 transition-colors">
+              <it.icon className="h-7 w-7 mx-auto md:ml-0 stroke-[1.25] text-gold transition-transform duration-700 group-hover:rotate-[8deg]" />
+              <h3 className="text-display text-xl text-center md:text-start mt-3">
+                {it.title}
+              </h3>
+              <p className="mt-2 text-xs md:text-sm text-center md:text-start leading-relaxed text-muted-foreground group-hover:text-white/65 transition-colors">
                 {it.text}
               </p>
-              <span className="mt-3 inline-flex items-center gap-2 text-[11px] tracking-[0.25em] uppercase opacity-50 group-hover:opacity-100 group-hover:text-gold transition-all">
+              <span className="mt-3 flex items-center justify-center md:justify-start gap-2 text-[11px] tracking-[0.25em] uppercase opacity-50 group-hover:opacity-100 group-hover:text-gold transition-all">
                 Learn more <ArrowUpRight className="h-3.5 w-3.5" />
               </span>
             </motion.div>

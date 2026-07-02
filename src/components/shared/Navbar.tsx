@@ -33,6 +33,7 @@ export function Navbar() {
     document.body.style.overflow = open ? "hidden" : "";
   }, [open]);
 
+  const message = encodeURIComponent("Book a Site Visit");
 
   return (
     <motion.header
@@ -65,9 +66,14 @@ export function Navbar() {
         </nav>
 
         <div className="flex text-display items-center gap-3">
-          <Link to="/contact" className="hidden md:inline-flex btn-luxe">
+          <a
+            href={`https://wa.me/918086744557?text=${message}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex btn-luxe"
+          >
             Book Site Visit
-          </Link>
+          </a>
           <button
             aria-label="Open menu"
             onClick={() => setOpen(true)}
@@ -114,7 +120,9 @@ export function Navbar() {
                 </motion.a>
               ))}
               <a
-                href="/contact"
+                href={`https://wa.me/918086744557?text=${message}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="btn-luxe mt-6 bg-gold border-gold text-ink"
               >

@@ -45,7 +45,7 @@ function Hero() {
             Global Habitat Pvt. Ltd.
           </motion.p>
 
-          <h1 className="text-display mt-6 text-[clamp(1rem,5vw,3.7rem)] text-white">
+          <h1 className="text-display mt-2 md:mt-6 text-3xl md:text-[clamp(1rem,5vw,3.7rem)] text-white">
             {headline.map((line, i) => (
               <span key={i} className="block overflow-hidden">
                 <motion.span
@@ -68,7 +68,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.1 }}
-            className="mt-8 max-w-xl text-base md:text-lg text-white/75 leading-relaxed"
+            className="md:mt-8 mt-3 max-w-xl text-base md:text-lg text-white/75 leading-relaxed"
           >
             Affordable luxury villas crafted with modern architecture,
             sustainable living, and timeless elegance.
@@ -78,7 +78,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.35 }}
-            className="mt-10 flex flex-wrap items-center gap-4"
+            className="md:mt-10 mt-4 flex flex-wrap items-center gap-4"
           >
             <Link
               to="/projects"

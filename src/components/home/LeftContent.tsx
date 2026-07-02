@@ -15,9 +15,7 @@ const LeftContent = () => {
       <h2 className="text-3xl font-light leading-[1.1] tracking-tight text-neutral-900 sm:text-4xl">
         Experience Living
         <br />
-        Refined
-        <br />
-        Living
+        Refined Living
       </h2>
 
       {/* Divider */}
