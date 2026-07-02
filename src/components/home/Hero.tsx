@@ -82,7 +82,7 @@ function Hero() {
           >
             <Link
               to="/projects"
-              className="btn-luxe text-xs py-2 px-4 md:py-3 md:px-5 md:text-sm bg-gold border-gold text-ink hover:bg-white hover:border-white"
+              className="btn-luxe text-xs py-1.5 px-4 md:py-3 md:px-5 md:text-sm bg-gold border-gold text-ink hover:bg-white hover:border-white"
             >
               Explore Projects
               <ArrowUpRight className="h-4 w-4" />
