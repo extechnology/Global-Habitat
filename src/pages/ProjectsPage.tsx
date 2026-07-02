@@ -27,7 +27,7 @@ function Projects() {
 
   return (
     <section id="projects" className="relative bg-white py-28 md:py-36">
-      <div className="absolute hidden md:block inset-x-0 top-0 h-32 bg-linear-to-b from-zinc-500 via-zinc-500/50 to-transparent pointer-events-none" />{" "}
+      <div className="absolute hidden md:block inset-x-0 top-0 h-38 bg-linear-to-b from-zinc-600 via-zinc-500/60  to-transparent pointer-events-none" />{" "}
       <div className="container-luxe">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <Reveal>
