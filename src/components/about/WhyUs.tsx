@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Reveal, Stagger, staggerItem } from "../shared/Reveal";
-import g5 from "../../assets/gallery-5.jpeg";
 
 const values = [
   {
@@ -73,7 +72,7 @@ function WhyUs() {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1.6, ease: [0.65, 0, 0.35, 1] }}
-                src={g5}
+                src="/1200 x 1500-02.jpg.webp"
                 alt="Our Guiding Principles — Global Habitat"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover"

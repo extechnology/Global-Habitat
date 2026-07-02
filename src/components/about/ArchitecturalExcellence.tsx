@@ -1,17 +1,15 @@
 import { motion } from "framer-motion";
 import { Reveal, Stagger, staggerItem } from "../shared/Reveal";
-import g2 from "../../assets/gallery-2.jpeg";
-import g4 from "../../assets/gallery-4.jpeg";
 import g5 from "../../assets/gallery-5.jpeg";
 
 const categories = [
   {
-    img: g2,
+    img: "/1200 X 900-02.jpg.webp",
     title: "Luxury Residential",
     subtitle: "Premium towers with world-class amenities",
   },
   {
-    img: g4,
+    img: "/1200 X 900-03.jpg.webp",
     title: "Sustainable Design",
     subtitle: "Eco-conscious development practices",
   },

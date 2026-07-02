@@ -20,7 +20,7 @@ function About() {
               whileInView={{ scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8, ease: [0.65, 0, 0.35, 1] }}
-              src="/about.jpeg"
+              src="/1280 x 1600-01.jpg.webp"
               alt="Modern luxury villa exterior with infinity pool"
               loading="lazy"
               className="absolute inset-0 h-full w-full object-cover"

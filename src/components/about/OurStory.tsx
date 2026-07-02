@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Reveal } from "../shared/Reveal";
-import g1 from "../../assets/gallery-1.jpeg";
 
 function OurStory() {
   return (
@@ -15,7 +14,7 @@ function OurStory() {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1.6, ease: [0.65, 0, 0.35, 1] }}
-                src={g1}
+                src="/1200 x 1500-01.jpg.webp"
                 alt="Global Habitat — Our Story"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover"

@@ -1,8 +1,5 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { Download, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
-import img1 from "../../assets/construction.jpeg";
-import img2 from "../../assets/construction.jpeg";
-import img3 from "../../assets/construction.jpeg";
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
 
@@ -25,7 +22,7 @@ const projects: Project[] = [
     title: "Piramal Aranya",
     tower: "Tower 1 – Ayaan",
     description: "2, 3 & 4 Bed Residences",
-    image: img1,
+    image: "/1600 x 1100-01.jpg.webp",
     status: "Delivered",
     possession: "Delivered",
     progress: 100,
@@ -35,7 +32,7 @@ const projects: Project[] = [
     title: "Piramal Aranya",
     tower: "Tower 2 – Arav",
     description: "Luxury Apartments",
-    image: img2,
+    image: "/1600 x 1100-02.jpg.webp",
     status: "Construction",
     possession: "Dec 2026",
     progress: 82,
@@ -45,7 +42,7 @@ const projects: Project[] = [
     title: "Piramal Aranya",
     tower: "Tower 3 – Ahan",
     description: "Luxury Apartments",
-    image: img3,
+    image: "/1600 x 1100-03.jpg.webp",
     status: "Construction",
     possession: "Mar 2027",
     progress: 65,

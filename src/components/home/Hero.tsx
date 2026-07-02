@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, ChevronDown } from "lucide-react";
-import heroImg from "../../assets/hero.jpeg";
 import { Link } from "react-router-dom";
 
 function Hero() {
@@ -24,7 +23,7 @@ function Hero() {
     >
       <motion.div style={{ y, scale: 1.08 }} className="absolute inset-0">
         <img
-          src={heroImg}
+          src="/1080  1920 Home banner-01.jpg.webp"
           alt="Modern luxury villa at golden hour"
           className="h-full w-full object-cover"
           fetchPriority="high"
